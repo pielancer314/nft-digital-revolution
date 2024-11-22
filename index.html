@@ -3,184 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NFT Digital Revolution</title>
+    <meta name="description" content="Digital Revolution NFT Collection - Own a piece of digital history through unique NFTs">
+    <meta name="keywords" content="NFT, Digital Revolution, Blockchain, Digital Art, Crypto Art">
+    <title>Digital Revolution NFT Collection</title>
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js" type="application/javascript"></script>
 </head>
 <body>
     <nav>
         <div class="container">
-            <div class="logo">NFT Digital Revolution</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#roadmap">Roadmap</a></li>
-                <li><a href="https://github.com/pielancer314/nft-digital-revolution" class="github-btn">
-                    <i class="fab fa-github"></i> GitHub
-                </a></li>
-            </ul>
+            <div class="logo">
+                <img src="./images/NFT-Digital-Revolution.png" alt="Digital Revolution Logo" class="nav-logo">
+                <span>Digital Revolution</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#showcase">NFTs</a>
+                <a href="#roadmap">Roadmap</a>
+                <button class="connect-wallet" onclick="connectWallet()">
+                    <i class="fas fa-wallet"></i>
+                    Connect Wallet
+                </button>
+            </div>
         </div>
     </nav>
 
     <header class="hero">
         <div class="container">
-            <h1>Welcome to NFT Digital Revolution</h1>
-            <p>Revolutionizing the digital art space with unique NFT collections</p>
-            <div class="cta-buttons">
-                <a href="#explore" class="cta-primary">Explore Collection</a>
-                <a href="https://github.com/pielancer314/nft-digital-revolution" class="cta-secondary">View on GitHub</a>
+            <div class="hero-content">
+                <h1>Digital Revolution NFT Collection</h1>
+                <p>Own a piece of digital history through unique, blockchain-verified NFTs</p>
+                <div class="cta-buttons">
+                    <a href="#showcase" class="cta-primary">Explore Collection</a>
+                    <a href="#about" class="cta-secondary">Learn More</a>
+                </div>
             </div>
         </div>
     </header>
 
-    <section id="explore" class="nft-showcase">
-        <div class="container">
-            <h2>Explore Collection</h2>
-            <div class="showcase-container">
-                <button class="nav-btn prev-btn">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="nft-display">
-                    <div class="nft-card">
-                        <div class="nft-image">
-                            <img src="images/nft1.jpg" alt="NFT 1" id="currentNFT">
-                        </div>
-                        <div class="nft-info">
-                            <h3 id="nftName">Digital Revolution #1</h3>
-                            <p id="nftDescription">Unique digital artwork from the Digital Revolution collection</p>
-                            <div class="nft-actions">
-                                <a href="#" class="explore-btn" id="exploreLink" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i> View on OpenBNB
-                                </a>
-                                <button class="mint-btn" id="mintButton">
-                                    <i class="fas fa-coins"></i> Mint NFT
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="nav-btn next-btn">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-            <div class="nft-counter">
-                <span id="currentIndex">1</span> / <span id="totalNFTs">10</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About the Project</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>NFT Digital Revolution is a cutting-edge project that brings unique digital artworks to the blockchain. Our collection features carefully crafted pieces that combine artistry with technological innovation.</p>
-                </div>
-                <div class="about-features">
-                    <div class="feature">
-                        <i class="fas fa-paint-brush"></i>
-                        <h3>Unique Artwork</h3>
-                        <p>Each piece is uniquely generated and verified on the blockchain</p>
-                    </div>
+    <main>
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Digital Revolution</h2>
+                <p>The Digital Revolution NFT collection represents key milestones in technological advancement. Each NFT is a unique piece of digital art that commemorates the innovations that have shaped our world.</p>
+                <div class="features">
                     <div class="feature">
                         <i class="fas fa-lock"></i>
-                        <h3>Secure</h3>
-                        <p>Built on reliable blockchain technology</p>
+                        <h3>Secure Blockchain</h3>
+                        <p>Built on OpenBNB for security and efficiency</p>
                     </div>
                     <div class="feature">
-                        <i class="fas fa-code"></i>
-                        <h3>Open Source</h3>
-                        <p>Transparent and community-driven development</p>
+                        <i class="fas fa-palette"></i>
+                        <h3>Unique Artwork</h3>
+                        <p>Each piece is one-of-a-kind digital art</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <h3>Community</h3>
+                        <p>Join a growing community of collectors</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="features" class="features">
-        <div class="container">
-            <h2>Key Features</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <i class="fas fa-robot"></i>
-                    <h3>Automated Generation</h3>
-                    <p>Advanced algorithms for unique NFT creation</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-layer-group"></i>
-                    <h3>Layer Management</h3>
-                    <p>Sophisticated layer system for complex artwork</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-file-code"></i>
-                    <h3>Smart Contracts</h3>
-                    <p>Secure and efficient blockchain integration</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-users"></i>
-                    <h3>Community Focused</h3>
-                    <p>Built with and for the NFT community</p>
+        <section id="showcase" class="showcase-section">
+            <div class="container">
+                <h2>NFT Showcase</h2>
+                <div class="nft-display">
+                    <!-- NFT content will be loaded dynamically -->
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="roadmap" class="roadmap">
-        <div class="container">
-            <h2>Project Roadmap</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Phase 1</h3>
-                        <p>Initial development and smart contract deployment</p>
+        <section id="roadmap" class="roadmap-section">
+            <div class="container">
+                <h2>Project Roadmap</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="date">Q1 2024</div>
+                        <div class="content">
+                            <h3>Launch Phase</h3>
+                            <p>Initial collection release and community building</p>
+                        </div>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Phase 2</h3>
-                        <p>Community building and artwork generation</p>
+                    <div class="timeline-item">
+                        <div class="date">Q2 2024</div>
+                        <div class="content">
+                            <h3>Expansion</h3>
+                            <p>New features and partnerships</p>
+                        </div>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Phase 3</h3>
-                        <p>Marketplace integration and partnerships</p>
+                    <div class="timeline-item">
+                        <div class="date">Q3 2024</div>
+                        <div class="content">
+                            <h3>Utility</h3>
+                            <p>Enhanced holder benefits and exclusive access</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-info">
-                    <h3>NFT Digital Revolution</h3>
-                    <p>Join us in revolutionizing the digital art space</p>
+                <div class="footer-section">
+                    <h3>Digital Revolution</h3>
+                    <p>The future of digital art collection</p>
                 </div>
-                <div class="social-links">
-                    <a href="https://github.com/pielancer314/nft-digital-revolution" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#about">About</a>
+                    <a href="#showcase">NFTs</a>
+                    <a href="#roadmap">Roadmap</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 NFT Digital Revolution. All rights reserved.</p>
+                <p>&copy; 2024 Digital Revolution NFT. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="blockchain.js"></script>
-    <script src="nft-loader.js"></script>
-    <script src="script.js"></script>
-    <script>
-        // Initialize blockchain and NFT display when the page loads
-        window.addEventListener('load', async () => {
-            await initBlockchain();
-            initializeNFTDisplay();
-        });
-    </script>
+    <script src="./blockchain.js"></script>
+    <script src="./nft-loader.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

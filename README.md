@@ -2,6 +2,8 @@
 
 A limited edition series of 608 unique NFTs representing the convergence of art and technology.
 
+🌐 **[View Live Website](https://pielancer314.github.io)**
+
 ## Project Overview
 
 - **Collection Size**: 608 unique pieces
@@ -52,6 +54,24 @@ npm install
 npx hardhat run scripts/deploy.js --network [network]
 ```
 
+## Local Development for GitHub Pages
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/pielancer314/pielancer314.github.io.git
+   cd pielancer314.github.io
+   ```
+
+2. Open `index.html` in your browser or use a local server:
+   ```bash
+   # Using Python
+   python -m http.server 8000
+   # Using Node.js
+   npx serve
+   ```
+
+3. Visit `http://localhost:8000` in your browser
+
 ## Project Description
 
 Embrace the Future of Technology
@@ -97,5 +117,22 @@ Each NFT includes the following metadata:
 }
 ```
 
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
 ## License
-MIT
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+Project Link: [https://github.com/pielancer314/pielancer314.github.io](https://github.com/pielancer314/pielancer314.github.io)
+
+---
+
+Made with ❤️ by Digital Revolution Team
