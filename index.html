@@ -36,15 +36,70 @@
             <div class="hero-content">
                 <h1>Digital Revolution NFT Collection</h1>
                 <p>Own a piece of digital history through unique, blockchain-verified NFTs</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="stat-value" id="mintPrice">0.08 BNB</span>
+                        <span class="stat-label">Mint Price</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-value" id="timeLeft">24:00:00</span>
+                        <span class="stat-label">Time Left</span>
+                    </div>
+                </div>
                 <div class="cta-buttons">
-                    <a href="#showcase" class="cta-primary">Explore Collection</a>
-                    <a href="#about" class="cta-secondary">Learn More</a>
+                    <a href="#showcase" class="cta-primary">
+                        <i class="fas fa-shopping-cart"></i>
+                        Mint Now
+                    </a>
+                    <a href="#about" class="cta-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="hero-nft-preview">
+                <div class="nft-slideshow">
+                    <img src="./images/nft-1.jpg" alt="NFT Preview" class="active">
+                    <img src="./images/nft-2.jpg" alt="NFT Preview">
+                    <img src="./images/nft-3.jpg" alt="NFT Preview">
                 </div>
             </div>
         </div>
     </header>
 
     <main>
+        <section id="stats" class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalSupply">608</div>
+                        <div class="stat-label">Total Supply</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="nftsMinted">0</div>
+                        <div class="stat-label">NFTs Minted</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="holders">0</div>
+                        <div class="stat-label">Unique Holders</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24.7K</div>
+                        <div class="stat-label">Community Members</div>
+                    </div>
+                </div>
+            </div>
+            <div class="live-mint-tracker">
+                <div class="progress-bar">
+                    <div class="progress" style="width: 40%"></div>
+                </div>
+                <div class="mint-info">
+                    <span>247/608 Minted</span>
+                    <span>40.6% Complete</span>
+                </div>
+            </div>
+        </section>
+
         <section id="about" class="about-section">
             <div class="container">
                 <h2>About Digital Revolution</h2>
@@ -66,6 +121,108 @@
                         <p>Join a growing community of collectors</p>
                     </div>
                 </div>
+                <div class="tech-stack">
+                    <h3>Built With</h3>
+                    <div class="tech-icons">
+                        <div class="tech-icon">
+                            <i class="fab fa-ethereum"></i>
+                            <span>OpenBNB</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fas fa-wallet"></i>
+                            <span>MetaMask</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>ERC-721</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="benefits-section">
+            <div class="container">
+                <h2>Holder Benefits</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card" data-aos="fade-up">
+                        <i class="fas fa-ticket-alt"></i>
+                        <h3>Exclusive Access</h3>
+                        <p>Get priority access to future drops and special events</p>
+                    </div>
+                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-users"></i>
+                        <h3>Community</h3>
+                        <p>Join our private Discord community of collectors</p>
+                    </div>
+                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-gift"></i>
+                        <h3>Rewards</h3>
+                        <p>Earn rewards through our staking program</p>
+                    </div>
+                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-vote-yea"></i>
+                        <h3>Governance</h3>
+                        <p>Vote on future collection developments</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="collection-preview" class="collection-preview">
+            <div class="container">
+                <h2>Collection Preview</h2>
+                <div class="preview-grid">
+                    <div class="preview-card" data-aos="fade-up">
+                        <img src="./images/nft-1.jpg" alt="NFT Preview 1">
+                        <div class="preview-info">
+                            <h3>Digital Dawn #001</h3>
+                            <p>The beginning of the digital age</p>
+                        </div>
+                    </div>
+                    <div class="preview-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="./images/nft-2.jpg" alt="NFT Preview 2">
+                        <div class="preview-info">
+                            <h3>Cyber Revolution #042</h3>
+                            <p>A tribute to cybernetics</p>
+                        </div>
+                    </div>
+                    <div class="preview-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="./images/nft-3.jpg" alt="NFT Preview 3">
+                        <div class="preview-info">
+                            <h3>Web3 Pioneer #103</h3>
+                            <p>The future of the internet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview-cta">
+                    <button class="view-more-btn">View More</button>
+                </div>
+                <div class="rarity-guide">
+                    <h3>Rarity Guide</h3>
+                    <div class="rarity-levels">
+                        <div class="rarity-level">
+                            <span class="rarity-color legendary"></span>
+                            <span class="rarity-name">Legendary</span>
+                            <span class="rarity-percent">3%</span>
+                        </div>
+                        <div class="rarity-level">
+                            <span class="rarity-color epic"></span>
+                            <span class="rarity-name">Epic</span>
+                            <span class="rarity-percent">7%</span>
+                        </div>
+                        <div class="rarity-level">
+                            <span class="rarity-color rare"></span>
+                            <span class="rarity-name">Rare</span>
+                            <span class="rarity-percent">20%</span>
+                        </div>
+                        <div class="rarity-level">
+                            <span class="rarity-color common"></span>
+                            <span class="rarity-name">Common</span>
+                            <span class="rarity-percent">70%</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -74,6 +231,185 @@
                 <h2>NFT Showcase</h2>
                 <div class="nft-display">
                     <!-- NFT content will be loaded dynamically -->
+                </div>
+                <div class="mint-interface">
+                    <div class="mint-counter">
+                        <button class="counter-btn" id="decrementBtn">-</button>
+                        <input type="number" id="mintAmount" value="1" min="1" max="10">
+                        <button class="counter-btn" id="incrementBtn">+</button>
+                    </div>
+                    <div class="mint-total">
+                        <span>Total:</span>
+                        <span id="mintTotal">0.08 BNB</span>
+                    </div>
+                    <button class="mint-btn" id="mintBtn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Mint NFT
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team-section">
+            <div class="container">
+                <h2>Meet the Team</h2>
+                <div class="team-grid">
+                    <div class="team-member" data-aos="fade-up">
+                        <div class="member-image">
+                            <img src="./images/team-1.jpg" alt="Team Member 1">
+                        </div>
+                        <h3>Alex Thompson</h3>
+                        <p class="member-role">Founder & Creative Director</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member-image">
+                            <img src="./images/team-2.jpg" alt="Team Member 2">
+                        </div>
+                        <h3>Sarah Chen</h3>
+                        <p class="member-role">Lead Artist</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-artstation"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member-image">
+                            <img src="./images/team-3.jpg" alt="Team Member 3">
+                        </div>
+                        <h3>Michael Rodriguez</h3>
+                        <p class="member-role">Blockchain Developer</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-stats">
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100K+</span>
+                        <span class="stat-label">Community Members</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item" data-aos="fade-up">
+                        <div class="faq-question">
+                            <h3>What is Digital Revolution NFT?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Digital Revolution NFT is a unique collection of 608 digital artworks that celebrate the milestones of technological advancement. Each piece is carefully crafted and verified on the blockchain.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up">
+                        <div class="faq-question">
+                            <h3>How do I purchase an NFT?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>To purchase an NFT, you'll need a MetaMask wallet and some BNB. Connect your wallet, select your desired NFT, and click the "Buy NFT" button to start the minting process.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up">
+                        <div class="faq-question">
+                            <h3>What blockchain is used?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We use the OpenBNB blockchain for its efficiency, low gas fees, and environmental sustainability.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up">
+                        <div class="faq-question">
+                            <h3>What are the benefits of holding?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Holders get exclusive access to future drops, private Discord community, staking rewards, and governance rights in our DAO.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up">
+                        <div class="faq-question">
+                            <h3>Is there a rarity system?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, our NFTs have four rarity levels: Common (70%), Rare (20%), Epic (7%), and Legendary (3%). Each level has unique traits and benefits.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up">
+                        <div class="faq-question">
+                            <h3>Can I sell my NFT?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, you can sell your NFT on any OpenBNB-compatible marketplace. We recommend using our partner marketplace for the best experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay Updated</h2>
+                    <p>Join our newsletter to receive the latest updates about drops, features, and community events.</p>
+                    <form id="newsletter-form" class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="social-proof">
+                    <div class="testimonials">
+                        <div class="testimonial">
+                            <img src="./images/user-1.jpg" alt="User 1">
+                            <p>"Amazing collection with real utility. The community is fantastic!"</p>
+                            <span>- John D.</span>
+                        </div>
+                        <div class="testimonial">
+                            <img src="./images/user-2.jpg" alt="User 2">
+                            <p>"Best NFT investment I've made. The artwork is incredible."</p>
+                            <span>- Sarah M.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="partners" class="partners-section">
+            <div class="container">
+                <h2>Our Partners</h2>
+                <div class="partners-grid">
+                    <div class="partner-logo">
+                        <img src="./images/partner-1.png" alt="Partner 1">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="./images/partner-2.png" alt="Partner 2">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="./images/partner-3.png" alt="Partner 3">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="./images/partner-4.png" alt="Partner 4">
+                    </div>
                 </div>
             </div>
         </section>
@@ -136,6 +472,51 @@
         </div>
     </footer>
 
+    <div id="mint-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Mint Your NFT</h2>
+            <div class="mint-details">
+                <p>You are about to mint:</p>
+                <div class="mint-summary">
+                    <span>Quantity: <span id="modalMintAmount">1</span></span>
+                    <span>Price per NFT: 0.08 BNB</span>
+                    <span>Total: <span id="modalMintTotal">0.08 BNB</span></span>
+                </div>
+            </div>
+            <button id="confirmMint" class="mint-btn">Confirm Mint</button>
+        </div>
+    </div>
+
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="success-message">
+                <i class="fas fa-check-circle"></i>
+                <h2>Success!</h2>
+                <p>Your NFT has been minted successfully.</p>
+                <div class="transaction-details">
+                    <p>Transaction Hash:</p>
+                    <code id="txHash"></code>
+                    <button class="copy-btn" id="copyTxHash">
+                        <i class="fas fa-copy"></i>
+                        Copy
+                    </button>
+                </div>
+                <a href="#" id="viewOnExplorer" class="view-tx-btn" target="_blank">
+                    View on Explorer
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
     <script src="./blockchain.js"></script>
     <script src="./nft-loader.js"></script>
     <script src="./script.js"></script>
